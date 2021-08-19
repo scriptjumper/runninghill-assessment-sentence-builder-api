@@ -39,6 +39,17 @@ app.get('/words/:id', async (req, res) => {
   }
 })
 
+app.post('/sentence', async (req, res) => {
+  try {
+    const { sentence } = req.body
+    const newSentence = await pool.query('INSERT INTO sentences (sentence) VALUES ($1) RETURNING *', [sentence])
+
+    res.json(newSentence.rows[0])
+  } catch (error) {
+    console.error(error.message)
+  }
+})
+
 app.listen(8000, () => {
   console.log('Server is listening on port 8000')
 })
