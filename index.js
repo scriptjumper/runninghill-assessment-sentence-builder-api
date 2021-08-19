@@ -1,8 +1,11 @@
 const express = require('express')
 const app = express()
 const pool = require('./db')
+const cors = require('cors')
 
-app.use(express.json()) // => res.body
+// Middleware required for us to work with the request body
+app.use(cors())
+app.use(express.json())
 
 //ROUTES//
 
