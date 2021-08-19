@@ -50,6 +50,19 @@ app.post('/sentence', async (req, res) => {
   }
 })
 
+/**
+ * Getting all sentences saved in the database
+ */
+app.get('/sentences', async (req, res) => {
+  try {
+    const sentences = await pool.query('SELECT * FROM sentences ORDER BY id DESC')
+
+    res.json(sentences.rows)
+  } catch (error) {
+    console.error(error.message)
+  }
+})
+
 app.listen(8000, () => {
   console.log('Server is listening on port 8000')
 })
