@@ -4,7 +4,7 @@
   "description": "<p align=\"center\">   <h3 align=\"center\">Sentence Builder API</h3> </p>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index"
   },
   "repository": {
     "type": "git",
