@@ -3993,3 +3993,8 @@ VAlUES ('aah!', 9),
 ('zounds!', 9),
 ('zowie!', 9),
 ('zzz!', 9);
+
+CREATE TABLE sentences (
+	id serial PRIMARY KEY,
+	sentence VARCHAR ( 255 ) 
+);
