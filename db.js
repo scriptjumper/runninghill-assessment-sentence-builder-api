@@ -3,9 +3,9 @@ const Pool = require('pg').Pool
 const pool = new Pool({
   user: 'postgres',
   password: 'password',
-  database: 'scriptjumper_dev',
+  database: 'postgres',
   host: 'localhost',
-  port: 5432
+  port: 5433
 })
 
 module.exports = pool
