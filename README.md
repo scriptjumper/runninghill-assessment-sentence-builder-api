@@ -1,5 +1,14 @@
 <p align="center">
   <h3 align="center">Sentence Builder API</h3>
+
+  <p align="center">
+    <br />
+    <a href="Guide/Rest_API.md">Documentation</a>
+    ·
+    <a href="https://github.com/scriptjumper/scriptjumper-api/issues/new?assignees=&labels=bug&title=">Report Bug</a>
+    ·
+    <a href="https://github.com/scriptjumper/scriptjumper-api/issues/new?assignees=&labels=enhancement&title=">Request Feature</a>
+  </p>
 </p>
 
 ## Table of Contents
