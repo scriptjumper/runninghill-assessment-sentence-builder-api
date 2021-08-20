@@ -54,3 +54,15 @@ $ git clone https://github.com/scriptjumper/sentence-api.git
 ```shell
 $ cp .env.example .env
 ```
+
+3. Install required packages
+
+```shell
+$ npm i
+```
+
+4. Launching the app
+
+```shell
+$ npm start
+```
